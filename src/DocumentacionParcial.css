@@ -1,0 +1,39 @@
+.slide {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.slide-img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.datos {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.datos p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.links a {
+  color: #0a66c2;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
