@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1 | Centro de Descargas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-page: #f8fafc;
+            --blue-title: #0d6efd;
+            --text-muted: #6b7280;
+            --btn-blue: #0d6efd;
+            --btn-green: #198754;
+            --btn-dark: #212529;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-page);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .download-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .title-main {
+            color: var(--blue-title);
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-download {
+            padding: 14px 20px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: block;
+            border: none;
+            color: white;
+        }
+
+        .btn-blue {
+            background-color: var(--btn-blue);
+        }
+
+        .btn-green {
+            background-color: var(--btn-green);
+        }
+
+        .btn-dark {
+            background-color: var(--btn-dark);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            filter: brightness(1.1);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .download-card {
+                padding: 1.5rem;
+            }
+
+            .title-main {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="download-card">
+        <h1 class="title-main">Centro de Descargas</h1>
+        <p class="subtitle">Haz clic en los botones para obtener tus archivos PDF.</p>
+
+        <div class="btn-stack">
+            <a href="./documentos/comandos.pdf" class="btn-download btn-blue" download>
+                COMANDOS BÁSICOS DE REACT
+            </a>
+            <a href="./documentos/ieee.pdf" class="btn-download btn-green" download>
+                ISO / ESTANDAR IEEE
+            </a>
+            <a href="./documentos/requerimientos.pdf" class="btn-download btn-dark" download>
+                REQUERIMIENTOS FUNCIONALES Y NO FUNCIONALES
+            </a>
+            <a href="./documentos/sha_256.pdf" class="btn-download btn-dark" download>
+                CÓDIGO PYTHON ALGORITMO SHA-256
+            </a>
+            <a href="/" class="btn-download btn-dark mt-4">
+                REGRESAR AL PROYECTO PRINCIPAL
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
