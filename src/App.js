@@ -6,7 +6,7 @@ import DocumentacionParcial2 from "./DocumentacionParcial2";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
-  const CLIENT_ID = "559179658963-l3cp0r08rog95o55tuanojl520qmiccv.apps.googleusercontent.com";
+  const CLIENT_ID = "179956481003-mbc4mh026nbo4h97ahimr73rdc93lerm.apps.googleusercontent.com";
   const navigate = useNavigate();
 
   // Estado para guardar datos del alumno
